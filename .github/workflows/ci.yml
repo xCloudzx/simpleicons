@@ -41,7 +41,7 @@ jobs:
       # Install this package (root)
       - name: Install library
         run: |
-          poetry install --no-interaction
+          poetry install -E imaging --no-interaction
           poetry run poe generate
 
       - name: Run tests
